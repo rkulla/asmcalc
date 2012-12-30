@@ -40,7 +40,15 @@ def dec_to_bin(decimal):
 
 
 def hex_chart(chart_len):
-    """ Decimal to Hex chart function """
+    """
+    Decimal to Hex chart function.
+
+    >>> import asmcalc
+    >>> asmcalc.hex_chart(2)
+    Decimal) Hex
+    0) 0
+    1) 1
+    """
     print "Decimal) Hex"
     for i in range(chart_len):
         print "%s) %s" % (i, hex(i).split('0x')[1].upper())
@@ -129,8 +137,8 @@ def display_help():
     print "Command-line options (b=binary, h=hex, d=decimal:\n"\
           "\t-h, -addhex, -b2d, -b2h, -d2b, -d2h, -h2b, -h2d, -hchart\n\n"\
           "Module methods:\n"\
-          "\tbinary_to_dec(), binary_to_hex(), dec_to_binary(),\n"\
-          "\tdec_to_hex(), hex_to_binary(), hex_to_decimal(), hex_chart(n)\n"
+          "\tbin_to_dec(), bin_to_hex(), dec_to_bin(),\n"\
+          "\tdec_to_hex(), hex_to_bin(), hex_to_dec(), hex_chart(n)\n"
 
 
 def error_check(args):

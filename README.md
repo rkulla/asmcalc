@@ -12,8 +12,8 @@ Command-line options (b=binary, h=hex, d=decimal):
 
 Module methods available:
 
-    binary_to_dec(), binary_to_hex(), dec_to_binary(),
-    dec_to_hex(), hex_to_binary(), hex_to_decimal(), hex_chart(n)
+    bin(), bin(), dec_to_bin(), dec_to_hex(), hex_to_bin(), hex_to_dec(),
+    hex_chart(n)
 
 when entering binary or hex, enclose in quotes:
 
@@ -74,3 +74,11 @@ Display a decimal to hex chart up to the number specified:
     18) 12
     19) 13
 
+### Unit tests
+
+Make sure the file runtests.base is in the root of the project.
+
+cd to the root of the project and run as:
+
+    $ chmod u+x runtests.bash
+    $ ./runtests.bash
