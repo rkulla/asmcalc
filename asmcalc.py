@@ -72,7 +72,7 @@ def hex_chart(chart_len):
 def hex_to_dec(h):
     """ Hex to Decimal converter function """
     h = "0x" + h
-    return int(eval(h))
+    return int(h, 16)
 
 
 def dec_to_hex(d):
